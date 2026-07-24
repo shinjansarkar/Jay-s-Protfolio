@@ -23,7 +23,7 @@ export default function IntelCenter() {
               INTEL CENTER
             </h2>
             <span className="text-gray-400 font-plex text-[10px] uppercase tracking-widest">
-              // CERTIFICATIONS
+              {"// CERTIFICATIONS"}
             </span>
           </div>
         </div>

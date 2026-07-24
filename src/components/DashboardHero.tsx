@@ -65,7 +65,7 @@ export default function DashboardHero() {
           <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-tactical-green"></div>
           
           <p className="font-plex text-sm text-tactical-green-pale leading-relaxed tracking-wider">
-            I don't just test software,<br/>
+            I don&apos;t just test software,<br/>
             I ensure quality, efficiency<br/>
             and impact at scale.
           </p>

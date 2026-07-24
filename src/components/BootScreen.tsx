@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Howl } from "howler";
 
 const bootSequence = [
   "Initializing Military Database...",
@@ -13,7 +12,6 @@ const bootSequence = [
 ];
 
 export default function BootScreen({ onComplete }: { onComplete: () => void }) {
-  const [currentStep, setCurrentStep] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isFlickering, setIsFlickering] = useState(false);
 
@@ -34,7 +32,6 @@ export default function BootScreen({ onComplete }: { onComplete: () => void }) {
         }
         
         stepIndex++;
-        setCurrentStep(stepIndex);
       } else {
         clearInterval(interval);
       }

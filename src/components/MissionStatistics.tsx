@@ -15,7 +15,7 @@ export default function MissionStatistics() {
               MISSION STATISTICS
             </h2>
             <span className="text-gray-500 font-plex text-[10px] uppercase tracking-widest">
-              // PERFORMANCE DASHBOARD
+              {"// PERFORMANCE DASHBOARD"}
             </span>
           </div>
         </div>

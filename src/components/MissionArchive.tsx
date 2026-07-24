@@ -94,7 +94,7 @@ export default function MissionArchive() {
               MISSION ARCHIVE
             </h2>
             <span className="text-gray-400 font-plex text-[10px] uppercase tracking-widest">
-              // CLASSIFIED FILES
+              {"// CLASSIFIED FILES"}
             </span>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function MissionArchive() {
                       {activeProject.name}
                     </h3>
                     <span className="text-black/60 text-[11px] uppercase tracking-[0.2em] font-bold">
-                      // {activeProject.subtitle}
+                      {"// "}{activeProject.subtitle}
                     </span>
                   </div>
 

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Share_Tech_Mono, Rajdhani, IBM_Plex_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
-import LenisProvider from "@/components/LenisProvider";
 import GlobalLayoutWrapper from "@/components/GlobalLayoutWrapper";
 
 const shareTechMono = Share_Tech_Mono({

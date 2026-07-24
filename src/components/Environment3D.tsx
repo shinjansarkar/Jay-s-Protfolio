@@ -5,21 +5,23 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, Stars, SpotLight, useDepthBuffer } from "@react-three/drei";
 import * as THREE from "three";
 
+function createParticles(count: number) {
+  const temp = [];
+  for (let i = 0; i < count; i++) {
+    const x = (Math.random() - 0.5) * 40;
+    const y = Math.random() * 40;
+    const z = (Math.random() - 0.5) * 40;
+    const speed = 0.1 + Math.random() * 0.2;
+    temp.push({ x, y, z, speed });
+  }
+  return temp;
+}
+
 function Rain() {
   const count = 2000;
   const mesh = useRef<THREE.InstancedMesh>(null);
 
-  const particles = useMemo(() => {
-    const temp = [];
-    for (let i = 0; i < count; i++) {
-      const x = (Math.random() - 0.5) * 40;
-      const y = Math.random() * 40;
-      const z = (Math.random() - 0.5) * 40;
-      const speed = 0.1 + Math.random() * 0.2;
-      temp.push({ x, y, z, speed });
-    }
-    return temp;
-  }, [count]);
+  const particles = useMemo(() => createParticles(count), [count]);
 
   const dummy = useMemo(() => new THREE.Object3D(), []);
 
@@ -48,7 +50,7 @@ function Rain() {
   );
 }
 
-function SearchLight({ position, rotation, color }: { position: [number, number, number], rotation: [number, number, number], color: string }) {
+function SearchLight({ position, color }: { position: [number, number, number], color: string }) {
   const ref = useRef<THREE.SpotLight>(null);
   const depthBuffer = useDepthBuffer({ frames: 1 });
 
@@ -118,8 +120,8 @@ export default function Environment3D() {
         <ambientLight intensity={0.1} />
         
         {/* Searchlights */}
-        <SearchLight position={[-8, 14, -5]} rotation={[0, 0, 0]} color="#00ff66" />
-        <SearchLight position={[8, 10, -10]} rotation={[0, 0, 0]} color="#ffffff" />
+        <SearchLight position={[-8, 14, -5]} color="#00ff66" />
+        <SearchLight position={[8, 10, -10]} color="#ffffff" />
         
         <Stars radius={50} depth={50} count={1000} factor={2} saturation={0} fade speed={1} />
         

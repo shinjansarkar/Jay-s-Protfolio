@@ -15,7 +15,7 @@ export default function MissionBriefing() {
               MISSION BRIEFING
             </h2>
             <span className="text-gray-400 font-plex text-[10px] uppercase tracking-widest">
-              // AGENT DOSSIER
+              {"// AGENT DOSSIER"}
             </span>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function MissionBriefing() {
                 MISSION BRIEFING
               </h3>
               <span className="text-black/60 text-[11px] uppercase tracking-[0.2em] font-bold">
-              // AGENT DOSSIER
+              {"// AGENT DOSSIER"}
               </span>
             </div>
 

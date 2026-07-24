@@ -2,8 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { FaFolder, FaCrosshairs, FaShieldAlt, FaMedal, FaLocationArrow, FaTrophy, FaBriefcase, FaHome, FaChartBar } from "react-icons/fa";
-import { AiOutlineAim } from "react-icons/ai";
+import { FaFolder, FaMedal, FaLocationArrow, FaTrophy, FaBriefcase, FaHome, FaChartBar } from "react-icons/fa";
 import { GiRifle } from "react-icons/gi";
 
 const menuItems = [

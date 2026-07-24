@@ -10,7 +10,7 @@ export default function BootScreenWrapper({ children }: { children: React.ReactN
     // Check session storage if we've already booted so it doesn't replay on manual refresh
     const hasBooted = sessionStorage.getItem("system_booted");
     if (hasBooted) {
-      setBooted(true);
+      setTimeout(() => setBooted(true), 0);
     }
   }, []);
 

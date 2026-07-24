@@ -16,7 +16,7 @@ export default function ExtractionPoint() {
               EXTRACTION POINT
             </h2>
             <span className="text-gray-500 font-plex text-[10px] uppercase tracking-widest">
-              // CONTACT COMMAND
+              {"// CONTACT COMMAND"}
             </span>
           </div>
         </div>

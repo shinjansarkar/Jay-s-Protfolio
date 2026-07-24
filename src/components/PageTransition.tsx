@@ -7,12 +7,7 @@ export default function PageTransition({ children }: { children: React.ReactNode
   const [loading, setLoading] = useState(true);
   const [loadingText, setLoadingText] = useState("DATABASE CONNECTED");
 
-  useEffect(() => {
-    // Reset state when component mounts (on route change due to template.tsx)
-    setLoading(true);
-    setLoadingText("DATABASE CONNECTED");
-
-    const timer1 = setTimeout(() => setLoadingText("VERIFYING CLEARANCE"), 400);
+  useEffect(() => {    const timer1 = setTimeout(() => setLoadingText("VERIFYING CLEARANCE"), 400);
     const timer2 = setTimeout(() => setLoadingText("LOADING PAGE"), 800);
     const timer3 = setTimeout(() => setLoadingText("ACCESS GRANTED"), 1200);
     const timer4 = setTimeout(() => setLoading(false), 1600);

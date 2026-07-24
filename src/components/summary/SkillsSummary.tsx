@@ -23,7 +23,7 @@ export default function SkillsSummary() {
   return (
     <div className="bg-tactical-black/60 border border-tactical-green/30 p-6 backdrop-blur-md h-full relative">
       <div className="font-plex text-xs text-tactical-green mb-6 uppercase tracking-widest border-b border-tactical-green/20 pb-2">
-        /// SKILLS - WEAPONS INVENTORY
+        {"/// SKILLS - WEAPONS INVENTORY"}
       </div>
       
       <div className="grid grid-cols-2 gap-x-8 gap-y-4">

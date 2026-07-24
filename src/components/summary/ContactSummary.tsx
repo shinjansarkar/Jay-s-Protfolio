@@ -6,7 +6,7 @@ export default function ContactSummary() {
   return (
     <div className="bg-tactical-black/60 border border-tactical-green/30 p-6 backdrop-blur-md h-full relative flex flex-col justify-between">
       <div className="font-plex text-xs text-tactical-green mb-6 uppercase tracking-widest border-b border-tactical-green/20 pb-2">
-        /// CONTACT - EXFILTRATION
+        {"/// CONTACT - EXFILTRATION"}
       </div>
       
       <div className="space-y-4 flex-1">

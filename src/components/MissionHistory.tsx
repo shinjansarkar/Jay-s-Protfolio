@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 const missions = [
   {
@@ -83,7 +82,7 @@ export default function MissionHistory() {
                 MISSION HISTORY
               </h2>
               <span className="text-tactical-green/70 font-plex text-[10px] uppercase tracking-widest">
-                // OPERATION MAP
+                {"// OPERATION MAP"}
               </span>
             </div>
           </div>

@@ -33,7 +33,7 @@ export default function WeaponInventory() {
               WEAPON INVENTORY
             </h2>
             <span className="text-gray-400 font-plex text-[10px] uppercase tracking-widest">
-              // SKILLS ARSENAL
+              {"// SKILLS ARSENAL"}
             </span>
           </div>
         </div>
